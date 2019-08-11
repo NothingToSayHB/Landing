@@ -5,61 +5,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/normolize.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css" integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/b47bab4724.js"></script>
     <title>DownTown</title>
 </head>
 <body>
 
-<header id="header" class="container-fluid">
-
-    <nav class="navbar-expand-lg navbar wrapper">
-        <a class="navbar-brand" href="#"><span>HOLIDAYS WITH </span><span>DOWNTOWN</span></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+<header class="header">
+    <div class="menu">
+        <div class="container">
+          <nav class="menu__nav menu_active">
+            <a href="#" class="menu__link">Главная</a>
+            <a href="#" class="menu__link">Продукция</a>
+            <a href="#" class="menu__link">Каталог</a>
+            <a href="#" class="menu__link">Примеры работы</a>
+            <a href="#" class="menu__link">Примерка изображений</a>
+            <a href="#" class="menu__link">стоимость дилеррам</a>
+            <a href="#" class="menu__link">о скидали</a>
+          </nav>
+        </div>
+      </div>
+  <div class="navbar">
+    <div class="container">
+    <div class="navbar-wrap">
+      <button class="menu-btn navbar__menu-btn">
+          <span class="menu-btn__line"></span>
+          <span class="menu-btn__line"></span>
+          <span class="menu-btn__line"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">About Us <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Tailor-Made</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Tours</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Groups</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Haritage</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Special Interest</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Fly-drive</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Hotels</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Cruises</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Insurance</a>
-            </li>
-          </ul>
-          <a class="login-link" href="#">login</a>
-        </div>    
-    </nav>
+    
+        <div class="logo navbar__logo">
+          <strong class="logo__text">
+            Фабрика скинали №1
+          </strong>
+          <span class="logo__desc">
+            ведущий производитель скинали
+          </span>
+        </div>
+    
+        <div class="navbar__mobile">
+          <a class="navbar__phone" href="tel:123456789">+7 915 123-45-126</a>
+          <span class="navar__work-time navbar__small-text">без выходных 9-21</span>
+        </div>
+    
+        <div class="navbar__landline">
+          <a class="navbar__phone" href="tel:123456789">+7 915 123-45-126</a>
+          <a href="mailto:example.com" class="navar__email navbar__small-text">info@mail.com</a>
+        </div>
+    
+        <button class="button-o navbar__button">Получить консультацию</button>
+    </div>
+
+    </div>
+  </div>
+
+  <div class="hero">
+    <div class="container">
+        <h1 class="hero__title">Гарантия <br>минимальные цены <br>на скинали</h1>
+        <span class="hero__subtitle">от 3 000 р/м2</span>
+        <button class="button hero__button">Заказать скинали</button>
+    </div>
+  </div>
 </header>
 
 <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script src="js/index.js"></script>
 </body>
 </html>

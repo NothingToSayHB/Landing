@@ -1,71 +1,19 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800&display=swap');
+// Базовые настройки сетки
+@import 'grid';
 
-$nav-bluish: #236093;
-$nav-blue: #002d5d;
-$link-color: #363636;
-$white: #fff;
+// Настройки шрифтов
 
-$header-font: 'Montserrat', sans-serif;
+@import 'fonts';
 
-#header {
-    background-image: url('../img/header-fon.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+// цвета
+@import 'colors';
 
-.wrapper {
-    width: 86.67vmax;
-    margin: 0 auto;
-}
+// Шапка
+@import 'blocks/navbar';
 
-.navbar { 
-    .navbar-brand {
-        font-family: $header-font;
-        font-weight: 800;
-        font-size: 0.75em;
-        span:nth-of-type(1) {
-            color: $nav-bluish;
-        }
-        span:nth-of-type(2) {
-            color: $nav-blue;
-        }
-    }
-}
+// сецкия после хедера
+@import 'blocks/hero';
 
-#header .navbar-expand-lg .navbar-nav .nav-link {
-    padding-left: 0.4375em;
-    padding-right: 0.4375em;
-}
+// Настройки интерфейса
 
-.navbar-nav {
-    li {
-        font-family: $header-font;
-        font-weight: 700;
-        text-transform: uppercase;
-        font-size: 11px;
-        .nav-link {
-            color: $link-color;
-            padding-left: 0.4375em;
-            padding-right: 0.4375em;
-        }
-
-        &.active {
-            a {
-                text-decoration: underline;
-            }
-        }
-    }
-
-}
-
-.login-link {
-    background: $nav-bluish;
-    border-radius: 100px;
-    padding: 0.95em 2.2em 0.95em 2.2em;
-    color: $white;
-    font-size: 0.625em;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-family: $header-font;
-}
-
+@import 'interface';
