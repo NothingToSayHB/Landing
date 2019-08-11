@@ -1,4 +1,5 @@
 // Базовые настройки сетки
+
 @import 'grid';
 
 // Настройки шрифтов
@@ -6,13 +7,20 @@
 @import 'fonts';
 
 // цвета
+
 @import 'colors';
 
 // Шапка
+
 @import 'blocks/navbar';
 
 // сецкия после хедера
+
 @import 'blocks/hero';
+
+// сецкия после хедера
+
+@import 'blocks/offer';
 
 // Настройки интерфейса
 

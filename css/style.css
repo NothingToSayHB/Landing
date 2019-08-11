@@ -217,6 +217,103 @@
   }
 }
 
+.offer {
+  padding: 129px 0;
+}
+
+.offer-block {
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+  padding: 80px;
+  margin-top: -200px;
+}
+
+.offer__title {
+  font-size: 25px;
+  text-transform: uppercase;
+  font-family: "Proxima Nova Semibold", sans-serif;
+  margin-bottom: 20px;
+}
+
+.offer__subtitle {
+  font-size: 21px;
+  display: block;
+  margin-bottom: 48px;
+}
+
+.offer .form__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 900px;
+  margin-bottom: 25px;
+}
+
+.offer .form__row:last-child {
+  margin-bottom: 0;
+}
+
+.offer .form__label {
+  font-size: 17px;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.offer .form__group {
+  -ms-flex-preferred-size: 33.3%;
+      flex-basis: 33.3%;
+}
+
+.offer .form__input {
+  width: 100%;
+  border-right-width: 0px;
+}
+
+.offer .form__input:last-child {
+  border-right-width: 1px;
+}
+
+.offer .form__button {
+  height: 80px;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .offer-block {
+    padding: 20px;
+  }
+  .offer__title {
+    font-size: 20px;
+  }
+  .offer__subtitle {
+    font-size: 16px;
+  }
+  .form__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .form__row-checkbox {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .form__group {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    width: 100%;
+  }
+  .form__input {
+    margin-bottom: 20px;
+  }
+}
+
 body {
   font-family: 'Proxima Nova Light', sans-serif;
   color: #262626;
@@ -240,6 +337,46 @@ body {
   background-color: #507fe1;
   color: #fff;
   font-family: 'Proxima Nova Semibold', sans-serif;
+}
+
+.bg-secondary {
+  background-color: #f1f1f1;
+}
+
+.input {
+  height: 80px;
+  padding-left: 30px;
+  border: 1px solid #dddddd;
+}
+
+.checkbox {
+  display: none;
+}
+
+.checkbox:checked + label:before {
+  background-color: #507fe1;
+}
+
+.checkbox__label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 40px;
+}
+
+.checkbox__label::before {
+  content: '';
+  width: 30px;
+  height: 30px;
+  border: 1px solid #dddddd;
+  margin-right: 20px;
+}
+
+.checkbox__label:hover {
+  cursor: pointer;
 }
 
 @media (max-width: 576px) {
